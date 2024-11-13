@@ -1,0 +1,10 @@
+google-generativeai
+firebase_admin
+Pillow
+st-pages
+folium
+geopy
+googlemaps
+streamlit-folium
+google-api-python-client
+deprecation

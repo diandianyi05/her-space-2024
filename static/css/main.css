@@ -1,0 +1,190 @@
+.subtitle {
+    color: #E75480;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    color: #E75480;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.stButton button {
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Add fade-in classes for each step */
+.step-1 { animation-delay: 0.2s; }
+.step-2 { animation-delay: 0.4s; }
+
+
+.custom-thought-box {
+    padding: 12px 16px;
+    border-radius: 4px;
+    background-color: #FFE5E5;
+    border-left: 3px solid #FFB6C1;
+    margin: 8px 0;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thought-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.delete-button {
+    color: #FF69B4;
+    cursor: pointer;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+.delete-button:hover {
+    color: #FF1493;
+    background-color: rgba(255, 105, 180, 0.1);
+}
+.summary-box {
+    background-color: #f0f7ff;
+    border: 1px solid #cce5ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.summary-box h5 {
+    color: #E75480;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.summary-box p {
+    margin: 8px 0;
+    color: #2c3e50;
+}
+
+.summary-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 8px 0;
+}
+
+.summary-box li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.summary-box li:before {
+    content: "•";
+    color: #0066cc;
+    position: absolute;
+            left: 0;
+}
+
+.yellow-link {
+    color: #ad8f47 !important;
+    text-decoration: none;
+}
+
+.yellow-link:hover {
+    color: darkgreen !important;
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Existing styles ... */
+
+/* AI Response Styles */
+.ai-response-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ai-response-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    font-family: inherit;
+}
+
+/* You might also want to add hover and focus states */
+.ai-response-container:hover {
+    background-color: #e6f3ff;
+    transition: background-color 0.3s ease;
+}
+
+.faq-answer {
+    font-size: 1.1em;  /* Slightly larger font size */
+    color: #000;  /* Change text color to black */
+    margin-bottom: 30px;  /* Increased margin for more spacing */
+    line-height: 1.6;  /* Improved line height for readability */
+    padding: 15px;  /* Added padding for better spacing */
+    background-color: #f9f9f9;  /* Light background color for contrast */
+    border-left: 4px solid #ad8f47;  /* Left border for a stylish look */
+    border-radius: 5px;  /* Rounded corners */
+}
+
+.footer-style {
+    visibility: hidden; /* Hide the main menu and footer */
+}
+
+.footer-style footer:after {
+    visibility: visible; /* Make the after pseudo-element visible */
+    display: block;
+    position: relative;
+    padding: 5px;
+    top: 10px;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    margin-top: auto;
+    color: #CD5C5C;
+    padding: 24px;
+    text-align: center;
+}
